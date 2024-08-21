@@ -17,8 +17,11 @@ cp .env.example .env
 # Install all the dependencies using composer
 composer install 
 
-#run sail install
+#run sail install  - select mysql and redis using space key
 php artisan sail:install 
+
+
+
 
 #copy the docker-compose.yml.txt file to the docker-compose.yml file
 cp docker-compose.yml.txt docker-compose.yml 
