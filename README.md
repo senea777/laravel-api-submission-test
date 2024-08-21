@@ -59,7 +59,7 @@ curl -X POST "http://localhost/api/submissions" -H "accept: application/json" -H
 
 ```
 
-##View logs
+## View logs
 
 ```bash
 #for viewing the logs
