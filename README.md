@@ -49,18 +49,23 @@ vendor/bin/sail bash
 #run the tests in conatiner console
 php artisan test
 
-
-#for viewing the logs
-tail -f storage/logs/laravel.log 
 ```
 
 ## API Endpoints
 ```bash
 #POST /api/submissions
 
-curl -X POST "http://localhost:8080/api/submissions" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"name\":\"Test Name\",\"email\":\"test@example.com\",\"message\":\"Test Message\"}" 
+curl -X POST "http://localhost/api/submissions" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"name\":\"Test Name\",\"email\":\"test@example.com\",\"message\":\"Test Message\"}" 
 
 ```
+
+##View logs
+
+```bash
+#for viewing the logs
+tail -f storage/logs/laravel.log 
+```
+
 
 ## Stop the application
 ```bash
